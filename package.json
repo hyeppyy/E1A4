@@ -10,5 +10,22 @@
   },
   "devDependencies": {
     "vite": "^5.2.0"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyeppyy/E1A4.git"
+  },
+  "author": "mutajune <june9418@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1"
+  },
+  "description": "복권 추첨기과 투두리스트 제작",
+  "bugs": {
+    "url": "https://github.com/hyeppyy/E1A4/issues"
+  },
+  "homepage": "https://github.com/hyeppyy/E1A4#readme"
 }

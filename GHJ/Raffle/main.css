@@ -1,0 +1,37 @@
+#result {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#bonus {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ball {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50px;
+  background-color: #bf8ef1;
+}
+
+.bonusball {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50px;
+  background-color: #a8f18e;
+}
+
+.resultWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

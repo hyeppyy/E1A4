@@ -1,9 +1,9 @@
-window.onload = function () {
+window.addEventListener("load", function () {
   const startBtn = document.querySelector("#startBtn");
   startBtn.addEventListener("click", function () {
     raffle();
   });
-};
+});
 
 function raffle() {
   const result = document.querySelector("#result");
@@ -38,3 +38,5 @@ function raffle() {
     bonus.append(bonusball);
   }, 7000);
 }
+//TODO: 버튼을 누를때마다 반복문이 무한 중복되어, 버튼을 누를때마다 리셋되고 다시 추첨되도록 변경
+//TODO:한 번이라도 추첨이 완료되면 버튼 안에 텍스트를 '재추첨'으로 변경

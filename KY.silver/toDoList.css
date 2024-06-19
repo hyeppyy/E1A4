@@ -22,19 +22,21 @@ html {
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
+  margin-top: 30vh;
 }
 
 .header h1 {
   display: inline-block;
   text-align: center;
+  font-size: 50px;
 }
 
 .container {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 20px;
-  width: 400px;
-  max-width: 400px;
+  width: 700px; 
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -44,32 +46,32 @@ html {
   justify-content: center;
 }
 
-#inputFiled {
-  color: black;
+#inputField {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(31, 31, 31);
   padding-left: 15px;
   height: 100%;
   border: none;
-  font-size: 15px;
   outline: none;
 }
 
 input:focus {
   outline: none;
 }
+
 .container #addToDo {
   color: #fff;
   cursor: pointer;
   background-color: transparent;
   border: none;
 }
-.container #addToDo:hover {
-  color: rgb(0, 217, 255);
-}
 
 .to-dos {
   margin-top: 25px;
   list-style: none;
-  /* background-color: rgb(241, 242, 241); */
   text-indent: 15px;
   font-size: 13px;
 }
@@ -82,5 +84,5 @@ button {
   background-color: transparent;
   border: none;
   color: rgb(226, 27, 27);
-  font-size: 10px;
+  font-size: 23px;
 }

@@ -1,0 +1,46 @@
+html, body {
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./images/background.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    color: rgb(255, 255, 255)
+}
+
+.container {
+    width: 550px;
+    height: 200px;
+}
+
+#inputFiled {
+    color: black;
+    padding-left: 15px;
+    width: 600px;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+.container #addToDo {
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+}
+.container #addToDo:hover {
+    color: rgb(0, 217, 255);
+}
+
+.to-dos {
+    margin-top:25px;
+    list-style: none;
+    /* background-color: rgb(241, 242, 241); */
+    text-indent: 15px;
+    font-size: 13px;
+}

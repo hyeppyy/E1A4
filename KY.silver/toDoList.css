@@ -11,6 +11,8 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
@@ -23,6 +25,7 @@ html, body {
 
 .header h1 {
     display: inline-block;
+    text-align: center;
 }
 
 .container {
@@ -31,8 +34,7 @@ html, body {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     padding: 20px;
-    display: flex;
-    justify-content: center;
+    display: inline-block;
 }
 
 #inputFiled {

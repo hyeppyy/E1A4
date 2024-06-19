@@ -5,39 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="../KY.silver/toDoList.css">
-    <script defer src="../KY.silver/main.js"></script>
 </head>
-
 <body>
-    <div class="todo-container">
+    <div class="header">
         <h1>To Do List</h1>
-        <div id="inputfield">
-            <input type="text" id="todoinput" placeholder="할 일 추가">
-            <button type="button" id="addBtn">등록</button>
-        </div>
     </div>
-    <ul></ul>
+    <div class="container">
+        <input id="inputField" type="text" placeholder="입력하세요" autofocus>   
+        <button id="addToDo"> + </button>    
+        <div class="to-dos" id="toDoList"> </div>    
+    </div>
+    <script src="../KY.silver/main.js"></script>
 
-
-    <!-- <div class="todo-container"> -->
-        <!-- <h1>Todo</h1>
-        <div id="inputField">
-            <input type="text" id="todoinput" placeholder="할 일 추가" onkeydown="keyCodeCheck()">
-            <button type="button" id="addBtn">
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-        <ul id="todoList">
-      
-        </ul>
-      </div>
- -->
-
-    <!-- <form>
-        <input type="text" placeholder="할 일을 입력하세요.">
-        <button>등록</button>
-    </form>
-    <ul></ul> -->
 </body>
 </html>

@@ -24,6 +24,20 @@ header h1 {
     font-size: 40px;
 }
 
+.container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    width: 700px; 
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.talk {
+    color: #2c7d9c;
+    text-align: center;    
+}
+
 .menu {
     text-align: center;
     height: 20vh;

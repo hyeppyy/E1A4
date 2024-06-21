@@ -1,3 +1,5 @@
+// GPT 한테 내 코드를 주고 보기좋게 바꿔달라고 해봤음
+
 let inputBox = document.getElementById('inputField');
 let addToDo = document.getElementById('addToDo');
 let toDoList = document.getElementById('toDoList');
@@ -51,3 +53,54 @@ function createToDoItem(text) {
     listItem.appendChild(deleteButton); // 삭제 버튼을 리스트 아이템에 추가
     return listItem; // 완성된 리스트 아이템 반환
 }
+
+// 저 코드를 화살표 함수로 바꿔달라고 해봤음
+
+// let inputBox = document.getElementById('inputField');
+// let addToDo = document.getElementById('addToDo');
+// let toDoList = document.getElementById('toDoList');
+
+// 할일 추가 버튼 클릭 이벤트
+addToDo.addEventListener('click', () => {
+    addToDoItem();
+});
+
+// 입력 필드에서 Enter 키 입력 이벤트
+inputBox.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        addToDoItem();
+    }
+});
+
+// 새로운 할일 아이템을 생성하고 추가하는 함수
+const addToDoItem = () => {
+    if (!inputBox.value) {
+        alert('내용을 입력해 주세요!');
+        return;
+    }
+
+    let listItem = createToDoItem(inputBox.value);
+    toDoList.appendChild(listItem);
+    inputBox.value = "";
+};
+
+// 새로운 할일 아이템을 생성하는 함수
+const createToDoItem = (text) => {
+    let listItem = document.createElement('li');
+    listItem.innerText = text;
+
+    let deleteButton = document.createElement('button');
+    deleteButton.textContent = "x";
+
+    deleteButton.addEventListener('click', () => {
+        toDoList.removeChild(listItem);
+    });
+
+    listItem.addEventListener('click', () => {
+        listItem.style.textDecoration = "line-through";
+    });
+
+    listItem.appendChild(deleteButton);
+    return listItem;
+};
+

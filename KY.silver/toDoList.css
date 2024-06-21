@@ -1,46 +1,88 @@
-html, body {
-    width: 50%;
-    height: 100vh;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./images/background.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+* {
+  box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./images/background.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* .june { 
+  display: flex;
+  justify-content: center;
+}*/
+
 .header {
-    color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+}
+
+.header h1 {
+  display: inline-block;
+  text-align: center;
+  font-size: 50px;
 }
 
 .container {
-    width: 550px;
-    height: 200px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  width: 700px; 
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-#inputFiled {
-    color: black;
-    padding-left: 15px;
-    width: 600px;
-    height: 100%;
-    border: none;
-    font-size: 15px;
-    outline: none;
+.HG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#inputField {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(31, 31, 31);
+  padding-left: 15px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 .container #addToDo {
-    color: #fff;
-    cursor: pointer;
-    background-color: rgb(31, 31, 31);
-}
-.container #addToDo:hover {
-    color: rgb(0, 217, 255);
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .to-dos {
-    margin-top:25px;
-    list-style: none;
-    /* background-color: rgb(241, 242, 241); */
-    text-indent: 15px;
-    font-size: 13px;
+  margin-top: 25px;
+  list-style: none;
+  text-indent: 15px;
+  font-size: 13px;
+}
+
+li {
+  margin-left: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: rgb(226, 27, 27);
+  font-size: 23px;
 }

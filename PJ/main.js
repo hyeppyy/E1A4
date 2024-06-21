@@ -3,15 +3,17 @@ const numbers = Array(45)
   .map((n, i) => i++);
 
 console.log(numbers);
-
+const startBtn = document.querySelector(".random_Bt");
 let selectNum = [];
 
-window.addEventListener("load", function () {
-  const startBtn = document.querySelector(".random_Bt");
-  startBtn.addEventListener("click", function () {
-    raffle();
-  });
+window.addEventListener("load", function restart_raffle() {
+  startBtn.addEventListener("click", start_raffle);
 });
+
+function start_raffle() {
+  raffle();
+  startBtn.removeEventListener("click", start_raffle);
+}
 
 function raffle() {
   for (let i = 1; i < 8; i++) {
@@ -31,7 +33,7 @@ function raffle() {
       ball.className = "ball";
       ball.textContent = winNums[i];
       result.append(ball);
-    }, 1000 * (i + 1));
+    }, 500 * (i + 1));
   }
 
   setTimeout(() => {
@@ -39,7 +41,14 @@ function raffle() {
     bonusBall.className = "ball";
     bonusBall.textContent = bonusNum;
     bonus.append(bonusBall);
-  }, 7000);
+  }, 3500);
+}
+const reset_Btn = document.querySelector(".reset_Bt");
+reset_Btn.addEventListener("click", del_raffle);
+function del_raffle() {
+  const ball = document.getElementsByClassName("ball");
+  result.remove(ball);
+  bonus.remove(ball);
 }
 
 // to-do-list

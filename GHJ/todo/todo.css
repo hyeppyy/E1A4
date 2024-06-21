@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #6959ca;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 360px;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: #fff;
+  max-height: 500px;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+h2 {
+  color: #7b7b7b;
+  font-weight: 600;
+  font-size: 24px !important;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#todoInput {
+  border: 1px solid #c4c4c4;
+  padding: 8px 6px;
+  border-radius: 4px;
+  width: calc(100% - 8px - 100px);
+}
+
+#addBtn {
+  width: 100px;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  background-color: #6959ca;
+  padding: 8px 14px;
+}
+
+#addBtn:hover {
+  background-color: #503fb4;
+  cursor: pointer;
+}
+
+.container__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container__body__todoList {
+  overflow-y: auto;
+  height: 420px;
+}
+
+.container__body__todoList > li {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container__body__todoList > li > button {
+  border: none;
+  background: none;
+  padding: 4px;
+}
+
+.container__body__todoList > li > button:hover {
+  color: #6959ca;
+  cursor: pointer;
+}

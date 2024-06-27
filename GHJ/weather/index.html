@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../weather/styles.css"></link>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="place"></h3>
+      <div class="container__wrap">
+        <h1 class="temp"></h1>
+        <div class="tempWrap">
+          <h4 class="minTemp"></h4>
+          <span class="line"></span>
+          <h4 class="maxTemp"></h4>
+        </div>
+        <div class="cardWrap">
+          <div class="card card1">
+            <h4>날씨</h4>
+            <span class="description"></span>
+          </div>
+          <div class="card card2">
+            <h4>위도</h4>
+            <span class="lat"></span>
+          </div>
+          <div class="card card1">
+            <h4>경도</h4>
+            <span class="lon"></span>
+          </div>
+          <div class="card card2">
+            <h4>풍속</h4>
+            <span class="wind"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../weather/index.js"></script>
+  </body>
+</html>

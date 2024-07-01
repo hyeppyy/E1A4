@@ -1,0 +1,10 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://muziktiger.hgodo.com/KOR/background/cameratiger/ipad.jpeg);
+}
+#canvas {
+  background-color: white;
+}

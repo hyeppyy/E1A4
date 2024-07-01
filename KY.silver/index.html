@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Home</title>
-    <link rel="html" href="/KY.silver/todolist.html">
-    <link rel="stylesheet" href="/KY.silver/mainhome.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Home</title>
+  <link rel="html" href="/KY.silver/todolist.html">
+
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="/KY.silver/mainhome.css" />
+
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+  <script defer src="./mainhome.js"></script>
 
 </head>
 <body>
-    <header>
-        <h1>💙</h1>
-    </header>
 
-   
+<header>
+  <h1>💙</h1>
+</header>
 
-    <div class="menu">
-        <ul class="main">
-            <li>
-                <a href="/KY.silver/todolist.html"> To do list </a>
-            </li>
-            <li>
-                <a href="/KY.silver/lotto.html"> LottoMachine </a>
-            </li>
-            <li>
-                <a href="../KY.silver/weather.html"> WeatherMap </a>
-            </li>
-        </ul>
-    </div>
+<!-- MAIN MENU (SLIDE) -->
+<div class="main">
+  <div class="menu">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
 
-    <div class="container">
-        <div class="talk">
-            아직 JS 가 어려워서 여러 사이트를 보면서 내용을 추가해서 만들었어요. <br>
-            지금은 새로운 <b>마크다운, 작성순서</b>에 집중하며 공부하고 있다는 점 참고바랍니당!
+        <div class="swiper-slide">
+          <a href="./todos/index.html"> To do list </a>
         </div>
+        <div class="swiper-slide">
+          <a href="./lotto/lotto.html"> Lotto </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="./weather/weather.html"> Weather </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="javascript:void(0)">example1</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="javascript:void(0)">example2</a>
+        </div>
+
+      </div>
     </div>
+
+    <!-- SWIPER BUTTON -->
+    <div class="swiper-prev">
+      <span class="material-icons">chevron_left</span>
+    </div>
+    <div class="swiper-next">
+      <span class="material-icons">chevron_right</span>
+    </div>
+
+  </div>
+</div>
 
 </body>
 </html>

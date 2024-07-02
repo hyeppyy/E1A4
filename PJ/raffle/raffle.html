@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <link rel="stylesheet" href="/PJ/todolist/todolist.css" />
+  <link rel="stylesheet" href="/PJ/raffle/raffle.css" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E1I4 pj</title>
   </head>
   <body>
-    <!-- to-do-list -->
-    <form>
-      <div class="todo_form">
-        <input
-          class="todo_input"
-          type="text"
-          placeholder="할 일을 입력하세요"
-        />
-        <button class="todo_btn">등록</button>
-      </div>
-      <ul class="todo-list"></ul>
-    </form>
+    <!-- 복권 -->
+    <button class="random_Bt bt_sty">추첨</button>
+    <button class="reset_Bt bt_sty">리셋</button>
+    <div><h1 class="raffle_title">추첨결과는?</h1></div>
+    <div id="result"></div>
+    <div><h1 class="raffle_title">보너스:</h1></div>
+    <div id="bonus"></div>
 
     <div class="button_inter">
       <a href="/PJ/index.html">
@@ -32,5 +27,5 @@
       </a>
     </div>
   </body>
-  <script src="/PJ/todolist/todolist.js"></script>
+  <script src="/PJ/raffle/raffle.js"></script>
 </html>

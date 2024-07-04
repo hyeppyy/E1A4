@@ -50,3 +50,10 @@ a {
   width: 80%;
   margin: 20px auto;
 }
+
+.todo-list li {
+  background-color: rgba(0, 0, 0, 0.123);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

@@ -1,97 +1,54 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #f0f0f0;
 }
 
 .container {
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  margin: 0 0 20px;
-}
-
-.input-container {
   display: flex;
-  gap: 10px; 
-  margin-bottom: 20px; 
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
-#taskInput {
-  flex-grow: 1; 
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px;
-  border: none;
-  background-color: #2052af;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #2116c2;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  position: relative;
-  padding: 10px;
-  background: #f9f9f9;
+.card {
+  background-color: white;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 100px; 
-}
-
-.complete-button, .delete-button {
-  position: absolute;
-  right: 10px;
-  padding: 5px;
-  border: none;
-  color: white;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
   cursor: pointer;
+  transition: transform 0.2s;
+  margin: 10px;
+  width: 250px;
 }
 
-.complete-button {
-  background-color: #2052af;
-  right: 50px; 
+.card:hover {
+  transform: scale(1.05);
 }
 
-.complete-button:hover {
-  background-color: #2116c2;
+.card img {
+  width: 100%;
+  height: auto;
 }
 
-.delete-button {
-  background-color: #dc3591;
-  right: 10px;
+.card-content {
+  padding: 15px;
 }
 
-.delete-button:hover {
-  background-color: #c8233e;
+.card h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #3f0799;
 }
 
-li.completed {
-  text-decoration: line-through;
-  color: #999;
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
 }

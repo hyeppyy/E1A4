@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    background-color: #fff;
+    height: 600px;
+}
+h4 {
+    background-color: rgb(255, 233, 233);
+    color: rgb(180, 180, 180);
+}
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .image img {
+    width: 450px;
+    height: auto;
+}
+
+.item {
+    border: 2px solid #e9e9e9;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: -5px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    background: url(../images/instagram_logo.png) center/cover no-repeat;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 60px;
+    display: inline-block;
+}
+
+input {
+    display: block;
+    width: 300px;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 10px auto;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+}
+
+input::placeholder {
+    margin-left: 10px;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    background-color: #6ba6ff;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: rgb(137, 198, 255);
+}
+
+a {
+    text-decoration: none;
+    width: 50%;
+}
+
+.forgotPW {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.forgotPW-link {
+    color: #2c2c2c;
+}
+
+.join {
+    color: #2c2c2c;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.join-link {
+    color: #64b4ff;
+}

@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e9e9ec;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  width: 500px;
+  margin-top: 80px;
+}
+
+.place {
+  border-bottom: 2px solid #e9e9ec;
+  padding-bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  gap: 15px;
+}
+
+.tempWrap {
+  display: flex;
+  gap: 12px;
+}
+
+.cardWrap {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 8px;
+  width: calc((100% - 24px) / 4);
+  min-height: 60px;
+}
+
+.card > h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card1 {
+  background-color: #ebfae8;
+  border: 1px solid #d6efd0;
+}
+
+.card1 > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #00c73c;
+}
+
+.card2 {
+  background-color: #fdfbef;
+  border: 1px solid #f6f2dd;
+}
+
+.card2 > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fda60e;
+}
+
+.tempWrap > h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #646464;
+}
+
+.line {
+  height: 12px;
+  background: #646464;
+  width: 1px;
+}
+
+h1 {
+  font-size: 48px !important;
+  font-weight: 600 !important;
+}

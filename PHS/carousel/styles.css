@@ -8,24 +8,24 @@ li {
 
 .slide_wrapper {
   position: relative;
-  width: 886px; 
-  height: 499px; 
+  width: 886px;
+  height: 499px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 .slides {
-  display: flex; 
+  display: flex;
   transition: transform 0.5s ease-out;
 }
 .slides li {
-  flex: 0 0 100%; 
+  flex: 0 0 100%;
 }
 .slides li img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  border-radius: 15px; 
+  object-fit: cover;
+  border-radius: 15px;
 }
 .controls {
   text-align: center;

@@ -27,6 +27,7 @@ body {
   transition: transform 0.2s;
   margin: 10px;
   width: 250px;
+  
 }
 
 .card:hover {
@@ -53,3 +54,4 @@ body {
   font-size: 14px;
   color: #555;
 }
+

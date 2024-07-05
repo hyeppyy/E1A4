@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "김치찌개",
           image: "kimchi-jjigae.jpg",
           distance: "500m",
-          cost: "8000won",
+          cost: "9,000원",
           calories: "450kcal",
           likes: "❤️❤️❤️❤️❤️",
           total: "100% like it"
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "된장찌개",
           image: "doenjang-jjigae.jpg",
           distance: "300m",
-          cost: "7000won",
+          cost: "8,000원",
           calories: "400kcal",
           likes: "❤️❤️❤️❤️",
           total: "80% like it"
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "비빔밥",
           image: "bibimbap.jpg",
           distance: "200m",
-          cost: "9000won",
+          cost: "10,000원",
           calories: "500kcal",
           likes: "❤️❤️❤️❤️❤️❤️",
           total: "100% like it"
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "삼겹살",
           image: "samgyeopsal.jpg",
           distance: "1km",
-          cost: "15000won",
+          cost: "15,000원",
           calories: "700kcal",
           likes: "❤️❤️❤️❤️❤️",
           total: "100% like it"
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "불고기",
           image: "bulgogi.jpg",
           distance: "800m",
-          cost: "12000won",
+          cost: "13,000원",
           calories: "600kcal",
           likes: "❤️❤️❤️❤️❤️",
           total: "100% like it"
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "냉면",
           image: "naengmyeon.jpg",
           distance: "600m",
-          cost: "7000won",
+          cost: "10,000원",
           calories: "350kcal",
           likes: "❤️❤️❤️❤️",
           total: "80% like it"
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "칼국수",
           image: "kalguksu.jpg",
           distance: "400m",
-          cost: "8000won",
+          cost: "11,000원",
           calories: "400kcal",
           likes: "❤️❤️❤️❤️",
           total: "80% like it"
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "떡볶이",
           image: "tteokbokki.jpg",
           distance: "200m",
-          cost: "5000won",
+          cost: "7,500원",
           calories: "300kcal",
           likes: "❤️❤️❤️❤️❤️",
           total: "100% like it"
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "치킨",
           image: "chicken.jpg",
           distance: "1.2km",
-          cost: "16000won",
+          cost: "22,000원",
           calories: "800kcal",
           likes: "❤️❤️❤️❤️❤️",
           total: "100% like it"
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
           name: "피자",
           image: "pizza.jpg",
           distance: "900m",
-          cost: "18000won",
+          cost: "26,000원",
           calories: "1000kcal",
           likes: "❤️❤️❤️❤️❤️",
           total: "100% like it"

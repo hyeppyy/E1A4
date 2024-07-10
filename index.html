@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="kr">
+  <link rel="stylesheet" href="/index_style.css" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>E1I4</title>
+    <link rel="icon" href="./E1I4_favicon.png">
   </head>
   <body>
-    <div class="bodyBes"><a href="esbaek/index.html"> 백은섭 </a></div>
-    <div class="bodyGhj"><a href="GHJ/index.html">권혜지 </a></div>
-    <div class="bodykye"></div><a href="KY.silver/index.html"> 김영은 </a></div>
-    <div class="bodyPhs"><a href="PHS/index.html"> 박현성 </a></div>
-    <div class="bodyPj"><a href="PJ/index.html"> 박준 </a></div>
+    <div class="wrapper">
+      <div class="container">
+          <div class="image">
+              <img src="/E1I4_body.png" alt="">
+              <div class="bodyBes personal_link"><a href="esbaek/index.html"> 백은섭 </a></div>
+              <div class="bodyGhj personal_link"><a href="GHJ/index.html">권혜지 </a></div>
+              <div class="bodykye personal_link"><a href="KY.silver/index.html"> 김영은 </a></div>
+              <div class="bodyPhs personal_link"><a href="PHS/index.html"> 박현성 </a></div>
+              <div class="bodyPj personal_link"><a href="PJ/index.html"> 박준 </a></div>
+            </div>
+          </div>
+      </div>
+
+          <div class="item">
+              <div class="logo"></div>
+              <input class="id" type="text" placeholder="이름" />
+              <input class="password" type="password" placeholder="비밀번호" />
+              <button id="loginBtn">로그인</button> 
+              <div class="forgotPW">
+                  <a class="forgotPW-link" href="#">비밀번호를 잊으셨나요?</a>
+              </div>
+              <div class="join"> 계정이 없으신가요? 
+                  <a class="join-link" href="#">가입하기</a>
+              </div>
+          </div>
+      </div>
+
   </body>
+</div>
+  <script src="/index.js"></script>
 </html>

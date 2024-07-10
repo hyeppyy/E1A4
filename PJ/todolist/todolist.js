@@ -8,6 +8,8 @@ form.addEventListener("submit", (event) => {
 
   if (input.value != "") {
     const li = document.createElement("li");
+    const del = document.createElement("button");
+
     li.innerText = input.value;
     ul.appendChild(li);
     input.value = "";

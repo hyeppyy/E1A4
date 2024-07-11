@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개인 프로젝트용으로 만든 To do list 여기로 옮겨옴</title>
+
+    <!-- Icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../Personal-project/main.css" />
+    <script defer src="../Personal-project/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Background Video -->
+      <video id="backgroundVideo" autoplay loop muted playsinline>
+        <source src="../images/background.mp4" type="video/mp4" />
+      </video>
+
+      <!--title -->
+      <div class="title-container">
+        <div class="title">For a nice day</div>
+        <!-- 리셋 버튼 -->
+        <button id="resetBtn" class="material-icons">refresh</button>
+      </div>
+
+      <!-- 진행중인 목록 -->
+      <div class="list-container">
+        <div class="header">
+          <div class="onGoing">What's your focus for today ?</div>
+          <button id="openModalBtn" class="material-icons">add</button>
+        </div>
+        <ul id="todoList"></ul>
+      </div>
+
+      <!-- 완료된 목록 -->
+      <div class="list-container">
+        <div class="completed">Completed Task</div>
+        <button id="checkBtn" class="material-icons">check</button>
+        <ul id="completedList"></ul>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle">Add todos</h2>
+        <input
+          type="date"
+          id="dateInput"
+          min="2024-07-01"
+          max="2030-12-31"
+          required
+        />
+        <input type="text" id="todoTitle" placeholder="제목을 입력하세요." />
+        <textarea
+          id="todoDescription"
+          placeholder="내용을 입력하세요."
+        ></textarea>
+        <button id="saveBtn">save</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,67 +1,127 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main Home</title>
-  <link rel="html" href="/KY.silver/todolist.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>영은!!</title>
+<link rel="stylesheet" href="./main.css">
 
-  <!--Google Material Icons-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<!--Google Material Icons-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-  <link rel="stylesheet" href="/KY.silver/mainhome.css" />
+<!--Swiper-->
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
-  <!--Swiper-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<script defer src="./main.js"></script>
 
-  <script defer src="./mainhome.js"></script>
-
+<link rel="icon" href="./favicon.ico">
 </head>
 <body>
 
 <header>
-  <h1>💙</h1>
+  <div class="inner">
+
+  <!-- 로고 -->
+  <a href="./index.html" class="logo">
+    <img src="./images/logo.png" alt="KY">
+  </a>
+
+  <!-- 메뉴 -->
+  <div class="main-menu">
+    <ul class="menu">
+
+      <li class="item">
+        <div class="item__name">그룹스터디</div>
+        <div class="item__contents">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li>
+                <a href="../KY.silver/todos/index.html">투두리스트 (기본)</a>
+              </li>
+              <li>
+                <a href="../KY.silver/lotto/lotto.html">로또추첨기</a>
+              </li>
+              <li>
+                <a href="../KY.silver/weather/weather.html">날씨 API</a>
+              </li>
+              <li>
+                <a href="../KY.silver/slide/slide.html">슬라이드</a>
+              </li>
+              <li>
+                <a href="../KY.silver/login/login.html">로그인창</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="item">
+        <div class="item__name">개인프로젝트</div>
+        <div class="item__contents">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li>
+                <a href="../KY.silver/Personal-project/index.html">투두리스트 (모달)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="item">
+        <div class="item__name">공부</div>
+        <div class="item__contents">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li>
+                <a href="javascript:void(0)">개인 공부용 메뉴</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  </div>
 </header>
 
-<!-- MAIN MENU (SLIDE) -->
-<div class="main">
-  <div class="menu">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <a href="./todos/index.html">To do list</a>
+<!-- 메인화면 베너 -->
+<main>
+  <div class="banner">
+    <div class="banner-inner1">
+      <section class="section1"></section>
+      <section class="section2">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="section-item1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section-item2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section-item3"></div>
+            </div>
+          </div>
+          <!-- 네비 추가 -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-slide">
-          <a href="./lotto/lotto.html">Lotto</a>
-        </div>
-        <div class="swiper-slide">
-          <a href="./weather/weather.html">Weather</a>
-        </div>
-        <div class="swiper-slide">
-          <a href="./slide/slide.html">slide</a>
-        </div>
-        <div class="swiper-slide">
-          <a href="./login/login.html">login</a>
-        </div>
-        <div class="swiper-slide">
-          <a href="./Personal-project/">PersonalPJ</a>
-        </div>
-
-      </div>
+      </section>
     </div>
-
-    <!-- SWIPER BUTTON -->
-    <div class="swiper-prev">
-      <span class="material-icons">chevron_left</span>
-    </div>
-    <div class="swiper-next">
-      <span class="material-icons">chevron_right</span>
-    </div>
-
+    <div class="banner-inner2"></div>
   </div>
-</div>
+</main>
+
+
+
+<!-- 바닥글 -->
+<footer>
+  <div class="footer-text"> 아직도 JS 는 GPT 가 전부 도와줍니다!! ^^ </div>
+</footer>
 
 </body>
 </html>

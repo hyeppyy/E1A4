@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Best To Do List</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Best To Do List</h1>
+        <div class="input-group">
+            <input type="text" id="todo-title" placeholder="할 일을 작성하세요.">
+            <textarea id="todo-details" placeholder="세부내용을 작성하세요."></textarea>
+            <input type="text" id="todo-deadline" placeholder="마감일자를 선택해주세요. (필수아님)" onfocus="(this.type='date')" onblur="(this.type='text')" autocomplete="off">
+            <div class="priority-and-button"> 
+            <select id="todo-priority" class="placeholder">
+                <option value="" disabled selected>중요도를 설정하세요.</option>
+                <option value="낮음">낮음</option>
+                <option value="보통">보통</option>
+                <option value="높음">높음</option>
+            </select>
+            <button id="add-todo">입력하기</button>
+            </div>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-details"></p>
+            <p id="modal-priority"></p>
+            <p id="modal-deadline"></p>
+            <p id="modal-status"></p>
+        </div>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

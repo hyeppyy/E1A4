@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-  navigator.geolocation.getCurrentPosition(success, fail);
+  navigator.geolocation.getCurrentPosition(success, fail); //사용자의 현재위치 요청
 });
 
 const success = (position) => {
@@ -23,19 +23,18 @@ const getWeather = (latitude, longitude) => {
     //.then:서버에서 데이터를 가져오는 작업(응답)이 완료된 이후에 then의 인자에 들어가있는 함수가 실행
     //response 객체는 fetch를 통해서 요청했을 때 웹서버가 응답한 결과를 담고있는 객체데이터이며,
     //객체 안에는 여러가지의 속성값을 통해서 서버와 통신 시 어떠한 상태로 통신이 이루워져있는지 알 수 있는 다양한 단서들이 들어있다.
-    .then(function (response) {
+    .then((response) => {
       //fetch()를 사용하면 응답 데이터를 JSON으로 인코딩해야 사용할 수 있다.
-      return response.json();
+      response.json();
     })
-    .then(function (json) {
+
+    .then((json) => {
       const temperature = json.main.temp;
       const place = json.name;
       const wind = json.wind.speed;
       const minTemp = json.main.temp_min;
       const maxTemp = json.main.temp_max;
       const description = json.weather[0].description;
-
-      console.log(json); // json 데이터 로그
 
       document.querySelector(".lat").innerText = latitude;
       document.querySelector(".lon").innerText = longitude;
